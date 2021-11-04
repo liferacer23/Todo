@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     color:rgb(39, 36, 36);
     font-family: 'Ubuntu';
+    padding:10px;
 }
 
 header
@@ -53,6 +54,18 @@ form button:hover
 {
     background: linear-gradient(rgba(256,256,256,0.9),rgba(256,256,256,0.3),rgba(256,256,256,0.9));
     color: rgb(116, 156, 75);
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .todo-container
 {

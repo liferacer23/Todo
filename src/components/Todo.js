@@ -6,14 +6,14 @@ const Todo = ({text,todos,todo,setTodos}) => {
     const deleteHandler =(e)=>
     {
         
-        setTodos(todos.map(el=>{
+/*         setTodos(todos.map(el=>{
             if(el.id === todo.id)
             {
                 return {...el, delete:!el.delete}
             }
             return el;
            
-        }));
+        })); */
          setTodos(todos.filter(el=>el.id !==todo.id))  
     }
     const completedHandler=()=>
