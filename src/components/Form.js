@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import TodoList from './TodoList';
+import React from 'react';
 import { FcPlus } from 'react-icons/fc'
-const Form = ({ setInputText, todos, setTodos, inputText }) => {
+const Form = ({ setStatus,setInputText, todos, setTodos, inputText }) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -16,19 +15,24 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
         console.log(todos );
         setInputText("");
     }
+    const statusHandler=(e)=>
+    {
+        setStatus(e.target.value);
+
+    }
     return (
         <form>
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
             <button onClick={submitToDoHandler} className="todo-button" type="submit">
                 <i className="plus-icon"><FcPlus /></i>
             </button>
-   {/*          <div className="select">
-                <select name="todos" className="filter-todo">
+            <div className="select">
+                <select onClick={statusHandler} name="todos" className="filter-todo">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="uncompleted">Uncompleted</option>
                 </select>
-            </div> */}
+            </div>
         </form>
         
         )

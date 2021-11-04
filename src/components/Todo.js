@@ -14,7 +14,7 @@ const Todo = ({text,todos,todo,setTodos}) => {
             return el;
            
         }));
-        
+         setTodos(todos.filter(el=>el.id !==todo.id))  
     }
     const completedHandler=()=>
     {
