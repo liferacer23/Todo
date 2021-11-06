@@ -6,15 +6,15 @@ const Todo = ({text,todos,todo,setTodos}) => {
     const deleteHandler =(e)=>
     {
         
-/*         setTodos(todos.map(el=>{
+       setTodos(todos.map(el=>{
             if(el.id === todo.id)
             {
                 return {...el, delete:!el.delete}
             }
             return el;
            
-        })); */
-         setTodos(todos.filter(el=>el.id !==todo.id))  
+        })); 
+        setTodos(todos.filter(el=>el.id !==todo.id))  
     }
     const completedHandler=()=>
     {
@@ -28,7 +28,8 @@ const Todo = ({text,todos,todo,setTodos}) => {
     }
     return (
         <div className={`todo ${todo.delete?"fall":''}`}>
-            <li className={`todo-item ${todo.completed ? "completed":''}`}>{text}</li>
+            
+            <input placeholder={text} className={`todo-item ${todo.completed ? "completed":''}`} />
             <button onClick={completedHandler} className="complete-btn">
                 <i className="check"><BsPatchCheckFill /></i>
             </button>

@@ -51,7 +51,7 @@ useEffect(() => {
       setTodos(todoLocal);
     }
 
-  }
+  } 
   
   return (
     <div>
