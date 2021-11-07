@@ -25,7 +25,7 @@ const Form = ({ setStatus,setInputText, todos, setTodos, inputText }) => {
             <div className="input-section">     
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
             <button onClick={submitToDoHandler} className="todo-button" type="submit">
-                <i className="plus-icon"><FcPlus /></i>
+                <i ><FcPlus className="plus-icon"/></i>
             </button>
             </div>
             <div className="select">
