@@ -1,11 +1,12 @@
-import React from 'react'
-import { RiDeleteBin5Line } from 'react-icons/ri'
-import { BsPatchCheckFill } from 'react-icons/bs'
+import React,{useState} from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
+import { AiFillCheckCircle } from 'react-icons/ai'
 const Todo = ({text,todos,todo,setTodos}) => {
 
+    const [flip,setFlip]=useState(false);
     const deleteHandler =(e)=>
     {
-        
+        e.preventDefault();
        setTodos(todos.map(el=>{
             if(el.id === todo.id)
             {
@@ -16,8 +17,10 @@ const Todo = ({text,todos,todo,setTodos}) => {
         })); 
         setTodos(todos.filter(el=>el.id !==todo.id))  
     }
-    const completedHandler=()=>
+    const completedHandler=(e)=>
     {
+        setFlip(!flip);
+        e.preventDefault();
         setTodos(todos.map(item=>{
             if(item.id === todo.id)
             {
@@ -29,12 +32,13 @@ const Todo = ({text,todos,todo,setTodos}) => {
     return (
         <div className={`todo ${todo.delete?"fall":''}`}>
             
-            <input placeholder={text} className={`todo-item ${todo.completed ? "completed":''}`} />
+            {/* {`check ${flip?'checked':''}`} */}
             <button onClick={completedHandler} className="complete-btn">
-                <i className="check"><BsPatchCheckFill /></i>
+                <AiFillCheckCircle className={`check ${todo.completed?'checked':''}`} />
             </button>
+            <input placeholder={text} className={`todo-item ${todo.completed ? "completed":''}`} />
             <button onClick={deleteHandler} className="trash-btn">
-                <i className="trash"><RiDeleteBin5Line /></i>         
+                <i className="trash"><AiOutlineClose /></i>         
             </button>
         </div>
     )

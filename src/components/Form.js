@@ -1,6 +1,7 @@
 import React from 'react';
-import { FcPlus } from 'react-icons/fc'
-const Form = ({ setStatus,setInputText, todos, setTodos, inputText }) => {
+import { AiOutlinePlus } from 'react-icons/ai'
+import TodoList from './TodoList';
+const Form = ({ setStatus,setInputText, todos, setTodos, inputText,filteredTodos }) => {
 
     const inputTextHandler = (e) => {
         setInputText(e.target.value);
@@ -12,7 +13,7 @@ const Form = ({ setStatus,setInputText, todos, setTodos, inputText }) => {
         setTodos([...todos,{ text:inputText, completed: false, delete: false, id: Math.random()*100 }
 
         ]);
-        console.log(todos );
+     
         setInputText("");
     }
     const statusHandler=(e)=>
@@ -22,12 +23,17 @@ const Form = ({ setStatus,setInputText, todos, setTodos, inputText }) => {
     }
     return (
         <form>
+            <div><h2>TODO</h2></div>
+            
             <div className="input-section">     
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
             <button onClick={submitToDoHandler} className="todo-button" type="submit">
-                <i ><FcPlus className="plus-icon"/></i>
+                <AiOutlinePlus className="plus-icon"/>
             </button>
             </div>
+          
+            <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>
+            
             <div className="select">
                 <select onClick={statusHandler} name="todos" className="filter-todo">
                     <option value="all">All</option>
