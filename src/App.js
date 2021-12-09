@@ -61,16 +61,14 @@ useEffect(() => {
   } 
   
   return (
-    <><div>
+    <div className="title">
 
-      <header className="title">
+      <header >
       </header>
       <Form filteredTodos={filteredTodos} setTodos={setTodos} todos={todos} status={status} setStatus={setStatus} inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
     </div>
     
-    <div>
-
-      </div></>
+    
   
     );
 }
