@@ -183,26 +183,13 @@ form button:hover {
   transform: translateY(13rem) rotateZ(60deg);
   opacity: 0;
 }
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  border: none;
-}
 
 .select {
-  margin: 1rem;
+
   overflow: hidden;
-  position: relative;
+
 }
-select {
-  color: rgb(19, 20, 19);
-  width: 10rem;
-  cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 0.5rem;
-}
+
 
 .todo-button {
   height: 2rem;
@@ -227,6 +214,17 @@ select {
   color: white;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
 @media (max-width: 500px) {
   body {
     width: 100%;

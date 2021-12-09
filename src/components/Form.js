@@ -18,6 +18,7 @@ const Form = ({ setStatus,setInputText, todos, setTodos, inputText,filteredTodos
     }
     const statusHandler=(e)=>
     {
+        e.preventDefault();
         setStatus(e.target.value);
 
     }
@@ -35,11 +36,11 @@ const Form = ({ setStatus,setInputText, todos, setTodos, inputText,filteredTodos
             <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>
             
             <div className="select">
-                <select onClick={statusHandler} name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                </select>
+                <button onClick={statusHandler} name="todos" className="filter-todo">
+                    <button value="all">All</button>
+                    <button value="completed">Completed</button>
+                    <button value="uncompleted">Uncompleted</button>
+                </button>
             </div>
         </form>
         
