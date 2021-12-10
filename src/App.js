@@ -6,7 +6,7 @@ import React, { useState, useEffect} from 'react';
 function App() {
 
 
-
+  const [flip, setFlip] = useState(true);
   const [inputText,setInputText]= useState("");
   const [todos,setTodos] = useState([]);
   const [status,setStatus]=useState("all");
@@ -61,11 +61,11 @@ useEffect(() => {
   } 
   
   return (
-    <div className="title">
-
-      <header >
+    <div className={`title ${flip?'dark-background':'light-background'}`}>
+      <header className={`header ${flip?'dark-header-background':''}`} >
+      <Form flip={flip} setFlip={setFlip} filteredTodos={filteredTodos} setTodos={setTodos} todos={todos} status={status} setStatus={setStatus} inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
       </header>
-      <Form filteredTodos={filteredTodos} setTodos={setTodos} todos={todos} status={status} setStatus={setStatus} inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
+     
     </div>
     
     

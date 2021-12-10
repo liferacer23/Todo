@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { AiFillCheckCircle } from 'react-icons/ai'
-const Todo = ({text,todos,todo,setTodos}) => {
+const Todo = ({text,todos,todo,setTodos,fliper}) => {
 
     const [flip,setFlip]=useState(false);
     const deleteHandler =(e)=>
@@ -33,11 +33,11 @@ const Todo = ({text,todos,todo,setTodos}) => {
         <div className={`todo ${todo.delete?"fall":''}`}>
             
             {/* {`check ${flip?'checked':''}`} */}
-            <button onClick={completedHandler} className="complete-btn">
+            <button onClick={completedHandler} className={`complete-btn ${fliper?'dark-background':'light-background'}`}>
                 <AiFillCheckCircle className={`check ${todo.completed?'checked':''}`} />
             </button>
-            <input placeholder={text} className={`todo-item ${todo.completed ? "completed":''}`} />
-            <button onClick={deleteHandler} className="trash-btn">
+            <input placeholder={text} className={`todo-item ${fliper?'dark-background':'light-background'} ${todo.completed ? "completed":''}`} />
+            <button onClick={deleteHandler} className={`trash-btn ${fliper?'dark-background':'light-background'}`}>
                 <i className="trash"><AiOutlineClose /></i>         
             </button>
         </div>
