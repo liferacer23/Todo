@@ -451,6 +451,12 @@ form button{
     text-decoration: line-through;
   }
 }
+@media (max-width: 775px)
+{
+  form{ width: 50vw;
+    height: 50vw
+  }
+}
 @media (max-width: 725px){
 
   .input-section input{
@@ -627,18 +633,18 @@ form button{
     margin-top: 10rem;
   }
 }
-@media (max-height: 369px){
+@media (max-height: 375px){
   form{
     width:50vw;
-    height: 35vh;
+    height: 55vh;
     margin-top: 30rem;
   }
 }
 @media (max-height: 729px){
   form{
-    width:70vw;
+    width:90vw;
     height: 55vh;
-    margin-top: 20rem;
+    margin-top: 7rem;
   }
 }
 @media (max-width: 280px){
@@ -664,7 +670,7 @@ form button{
 @media (max-height: 512px){
   form{
     width:70vw;
-    height: 60vh;
+    height: 90vh;
     margin-top: 10.5rem;
   }
   .input-section{
