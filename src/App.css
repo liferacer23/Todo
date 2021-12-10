@@ -387,6 +387,9 @@ padding:0.5rem;
 .todo-item::placeholder {
   font-size: 0.7rem;
 }
+.checked{
+  font-size: 1.2rem;
+}
 form button{
     font-size: 1.2rem;
 }
@@ -421,6 +424,9 @@ form button{
 }
 .todo button{
     font-size: 1rem;
+}
+.checked{
+  font-size: 1rem;
 }
 .filter-todo button{
   font-size: 0.5rem;
@@ -491,6 +497,9 @@ form button{
   }
   .todo button{
     font-size: 0.7rem;
+}
+.checked{
+  font-size: 0.7rem;
 }
 .filter-todo button{
   font-size: 0.4rem;
