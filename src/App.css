@@ -599,7 +599,7 @@ form button{
   form{
     width:80vw;
     height: 45vh;
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 @media (max-height: 321px){
