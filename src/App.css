@@ -443,8 +443,7 @@ form button{
     width:80%;
     font-size: 0.5rem;
   }
-  .completed {
-    text-decoration:transparent;
+  .todo .completed {
     text-decoration: line-through;
   }
 }
@@ -461,10 +460,10 @@ form button{
     width:90%;
     font-size: 0.5rem;
   }
-  .completed {
-    text-decoration:transparent;
+  .todo .completed {
     text-decoration: line-through;
   }
+  
 }
 @media (max-width: 536px){
   .input-section input{
@@ -479,8 +478,7 @@ form button{
     width:90%;
     font-size: 0.5rem;
   }
-  .completed {
-    text-decoration:transparent;
+  .todo .completed {
     text-decoration: line-through;
   }
 }
@@ -497,8 +495,7 @@ form button{
     width:80%;
     font-size: 0.5rem;
   }
-  .completed {
-    text-decoration:transparent;
+  .todo .completed {
     text-decoration: line-through;
   }
 }
@@ -525,14 +522,13 @@ form button{
 .checked{
   font-size: 0.7rem;
 }
+.todo .completed {
+  text-decoration: line-through;
+}
 .filter-todo button{
   font-size: 0.4rem;
 }
 .todo-item::placeholder {
   font-size: 0.5rem;
-}
-.completed {
-  text-decoration:transparent;
-  text-decoration: line-through;
 }
 }
