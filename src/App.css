@@ -306,7 +306,7 @@ padding:0.5rem;
   form {
     display: flex;
     flex-direction: column;
-    height: 45vh;
+    height: 85vh;
     width: 40vw;
     background-color: transparent;
     margin-left: auto;
