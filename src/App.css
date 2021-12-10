@@ -640,13 +640,7 @@ form button{
     margin-top: 30rem;
   }
 }
-@media (max-height: 729px){
-  form{
-    width:90vw;
-    height: 55vh;
-    margin-top: 7rem;
-  }
-}
+
 @media (max-width: 280px){
   form{
     width:85vw;
