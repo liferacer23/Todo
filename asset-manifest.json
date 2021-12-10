@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Todo/static/css/main.d8fad560.chunk.css",
+    "main.css": "/Todo/static/css/main.98e63e4e.chunk.css",
     "main.js": "/Todo/static/js/main.3cb6a65d.chunk.js",
     "main.js.map": "/Todo/static/js/main.3cb6a65d.chunk.js.map",
     "runtime-main.js": "/Todo/static/js/runtime-main.bc5d9c94.js",
@@ -10,14 +10,14 @@
     "static/js/3.0f658a64.chunk.js": "/Todo/static/js/3.0f658a64.chunk.js",
     "static/js/3.0f658a64.chunk.js.map": "/Todo/static/js/3.0f658a64.chunk.js.map",
     "index.html": "/Todo/index.html",
-    "static/css/main.d8fad560.chunk.css.map": "/Todo/static/css/main.d8fad560.chunk.css.map",
+    "static/css/main.98e63e4e.chunk.css.map": "/Todo/static/css/main.98e63e4e.chunk.css.map",
     "static/js/2.acd77e81.chunk.js.LICENSE.txt": "/Todo/static/js/2.acd77e81.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Todo/static/media/bg-desktop-light.3508d620.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bc5d9c94.js",
     "static/js/2.acd77e81.chunk.js",
-    "static/css/main.d8fad560.chunk.css",
+    "static/css/main.98e63e4e.chunk.css",
     "static/js/main.3cb6a65d.chunk.js"
   ]
 }
