@@ -375,6 +375,10 @@ padding:0.5rem;
 .todo-item::placeholder {
   font-size: 0.8rem;
 }
+.completed {
+  text-decoration:transparent;
+  text-decoration: line-through;
+}
 }
 @media (max-width: 800px) {
   form{
@@ -395,6 +399,10 @@ form button{
 }
   .filter-todo .filter-display{
     width:70%;
+  }
+  .completed {
+    text-decoration:transparent;
+    text-decoration: line-through;
   }
 }
 @media (max-width: 776px) {
@@ -435,6 +443,10 @@ form button{
     width:80%;
     font-size: 0.5rem;
   }
+  .completed {
+    text-decoration:transparent;
+    text-decoration: line-through;
+  }
 }
 @media (max-width: 725px){
 
@@ -448,6 +460,10 @@ form button{
   .filter-todo .filter-display button{
     width:90%;
     font-size: 0.5rem;
+  }
+  .completed {
+    text-decoration:transparent;
+    text-decoration: line-through;
   }
 }
 @media (max-width: 536px){
@@ -463,6 +479,10 @@ form button{
     width:90%;
     font-size: 0.5rem;
   }
+  .completed {
+    text-decoration:transparent;
+    text-decoration: line-through;
+  }
 }
 @media (max-width: 474px){
   .input-section input{
@@ -476,6 +496,10 @@ form button{
   .filter-todo .filter-display button{
     width:80%;
     font-size: 0.5rem;
+  }
+  .completed {
+    text-decoration:transparent;
+    text-decoration: line-through;
   }
 }
 @media (max-width: 426px){
@@ -506,5 +530,9 @@ form button{
 }
 .todo-item::placeholder {
   font-size: 0.5rem;
+}
+.completed {
+  text-decoration:transparent;
+  text-decoration: line-through;
 }
 }
