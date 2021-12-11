@@ -86,7 +86,7 @@ const Form = ({
         />
         <div className="select">
           <div onClick={statusHandler} name="todos" className="filter-todo">
-            <button value="all" className={`number-display ${flip?'dark-background':'light-background'}`}>
+            <button value="all" disable className={`number-display ${flip?'dark-background':'light-background'}`}>
               {todos.length} Items left
             </button>
             <div className="filter-display" >
