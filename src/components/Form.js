@@ -59,7 +59,7 @@ const Form = ({
       <form>
         <div className={`form-top`}>
           <h2>TODO</h2>
-          <button onClick={darModeHandler}>{background}</button>
+          <button type="button" onClick={darModeHandler}>{background}</button>
         </div>
 
         <div className={`input-section`}>

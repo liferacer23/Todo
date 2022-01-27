@@ -68,6 +68,7 @@ form {
   outline: none;
   background-color: transparent;
   color: white;
+  transition: 0.8s;
 }
 form input,
 form button {
